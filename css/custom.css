@@ -1,0 +1,140 @@
+ /* Main */
+body {
+font-family: 'Muli', sans-serif;
+}
+
+.topMenu {
+  display:flex;
+  flex-direction: column;
+  background-color: #093998;
+}
+
+.topMenu a {
+  color:#fff;
+}
+
+a:hover {
+  color: #ff8c00;
+}
+
+.navbar-brand {
+  margin: auto auto auto 0;
+  color: #093998;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.main {
+  background-color: #21407f;
+}
+
+#about {
+  color: #093998;
+  line-height: 1.5;
+}
+
+#services {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: monospace;
+}
+
+span, .card-header {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: monospace;
+  color: #093998;
+}
+
+a {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: monospace;
+  color: #ff8c00;
+}
+
+a:hover {
+  color: #ff8c00;
+}
+
+.card-title, .card-text {
+  color: #fff;
+}
+
+.card-title {
+font-weight: bold;
+font-family: monospace;
+font-size: 1.5rem;
+color: #fff;
+}
+
+.card-text-dark {
+  color: #093998;
+}
+
+.card-title-dark {
+font-weight: bold;
+font-family: monospace;
+font-size: 1.5rem;
+color: #093998;
+}
+
+.card-text, .card-text-dark {
+ font-size: 1.15rem;
+}
+
+.card {
+  background-color: #21407f;
+}
+
+.projects {
+  color: #093998;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: monospace;
+}
+
+.contact, .contact-card {
+  background-color: #e1eafc;
+}
+
+
+
+
+
+
+
+/* .row.equal-height {
+    display: flex;
+    flex-wrap: wrap;
+}
+.row.equal-height > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    flex: 1;
+} */
+
+
+/* xs < 768 */
+@media (max-width: 768px) {
+
+}
+
+/* sm */
+@media screen and (min-width: 768px) {
+
+}
+
+/* md */
+@media screen and (min-width: 992px) {
+
+}
+
+/* lg */
+@media screen and (min-width: 1200px) {
+
+}

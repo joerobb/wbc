@@ -1,0 +1,186 @@
+svg {
+  height: 80px;
+  width: 75px;
+  margin: auto 10px auto auto;
+  padding: 10px 0 15px 0;
+}
+
+a:hover svg line {
+  stroke:#ff8c00;
+}
+
+.plan {
+  stroke:#fff;
+  fill:#fff;
+}
+
+.heavy {
+  stroke-width: 0.1px;
+  stroke:#fff;
+  fill:#fff;
+}
+/* Keyframes */
+
+@keyframes drawLine {
+  from {
+    stroke-dashoffset: 100;
+  }
+  to {
+    stroke-dashoffset: 200;
+  }
+}
+
+
+@keyframes draw {
+  from {
+    stroke-dashoffset: 150;
+  }
+  to {
+    stroke-dashoffset: 300;
+  }
+}
+
+@keyframes drawCorner {
+  from {
+    stroke-dashoffset: 150;
+  }
+  to {
+    stroke-dashoffset: 75;
+  }
+}
+
+@keyframes drawCornerL {
+  from {
+    stroke-dashoffset: 140;
+  }
+  to {
+    stroke-dashoffset: 200;
+  }
+}
+
+@keyframes offset {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes drawD {
+  from {
+    stroke-dashoffset: 150;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+/* Transitions */
+
+.diamond {
+  animation: rotation 2s ease-out;
+  transform-origin: 50.5% 14.5%;
+}
+
+.text {
+  animation: textGrow 2s ease-in-out;
+  transform-origin: 50% 50%;
+  transform-box: fill-box;
+}
+
+.outline {
+  stroke-dasharray: 485;
+  stroke-dashoffset: 485;
+  animation: offset 1.5s linear forwards;
+}
+
+.one {
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  animation: offset 0.5s linear forwards;
+}
+
+.two {
+  stroke:#fff;
+  stroke-miterlimit:10;
+  stroke-width: 2px;
+  stroke-dasharray: 100;
+  animation: fadeIn 0.5s infinite, drawLine 0.5s linear forwards;
+  animation-delay: 0.5s;
+  visibility: hidden;
+}
+
+.three {
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  animation: fadeIn 0.5s, offset 0.5s linear forwards;
+  animation-delay: 1s;
+}
+
+.four {
+  stroke:#fff;
+  stroke-miterlimit:10;
+  stroke-width:2px;
+  stroke-dasharray: 150;
+  animation: fadeIn 0.5s infinite, drawCorner 0.25s linear forwards;
+  animation-delay: 1.5s;
+  visibility: hidden;
+}
+
+.five {
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  animation: offset 1.5s linear forwards;
+  animation: fadeIn 0.5s infinite, drawCornerL 0.25s linear forwards;
+  animation-delay: 1.75s;
+  visibility: hidden;
+}
+
+.six {
+  stroke:#fff;
+  stroke-miterlimit:10;
+  stroke-width: 2px;
+  stroke-dasharray: 150;
+  animation: fadeIn 0.5s infinite, draw 0.5s linear forwards;
+  animation-delay: 3s;
+  visibility: hidden;
+}
+
+.seven {
+  stroke:#fff;
+  stroke-miterlimit:10;
+  stroke-width: 2px;
+  stroke-dasharray: 100;
+  animation: fadeIn 0.5s infinite, drawLine 0.5s linear forwards;
+  animation-delay: 2.5s;
+  visibility: hidden;
+}
+
+.eight {
+  stroke:#fff;
+  stroke-miterlimit:10;
+  stroke-width: 2px;
+  stroke-dasharray: 150;
+  animation: fadeIn 0.5s infinite, drawD 0.5s linear forwards;
+  animation-delay: 2.05s;
+  visibility: hidden;
+}
+
+.path {
+  stroke:#093998;
+  fill:#093998;
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  animation: offset 2s linear forwards;
+}
+
+.dot {
+  stroke:#093998;
+  fill:#093998;
+}
