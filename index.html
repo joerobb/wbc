@@ -15,15 +15,16 @@
 
   <body>
 
-  <div id="topMenu" class="topMenu navbar top-menu" style="display: none;">
-    <a  href="#about">About</a>
-    <a  href="#projects">Projects</a>
-    <a  href="#contact">Contact</a>
-  </div>
+
 
   <nav class="navbar bg-white">
     <h2 class="navbar-brand"><span>W B C</span><br>Drawings</h2>
-      <a class="logo"><svg class= "nav-item" id="logo" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100.7 149.21"><defs>
+    <div id="lgMenu" class="lgMenu">
+      <a  class="lgmenuLink mr-5" href="#about">About</a>
+      <a  class="lgmenuLink mx-5" href="#projects">Projects</a>
+      <a  class="lgmenuLink ml-5 mr-2" href="#contact">Contact</a>
+    </div>
+      <a class="logo" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"><svg class= "nav-item" id="logo" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100.7 149.21"><defs>
           <style>.line{stroke:#093998;stroke-miterlimit:10;stroke-width:7px;}</style></defs>
           <line class="line six" x1="1.7" y1="147.71" x2="99.7" y2="49.71"/>
           <line class="line seven" x1="99.7" y1="49.71" x2="99.7" y2="148.71"/>
@@ -35,9 +36,18 @@
           <line class="line one" x1="100.2" y1="148.21" x2="0.2" y2="148.21"/>
      </svg>
    </a>
+
+   <div id="collapseExample" class="collapse w-100 menu">
+     <a  class="menuLink mr-1" href="#about">About</a>
+     <a  class="menuLink mx-1" href="#projects">Projects</a>
+     <a  class="menuLink ml-1" href="#contact">Contact</a>
+   </div>
   </nav>
 
-  <img src="https://creativepool.com/files/magazine/images/full/_920.jpg?rand=652510" class="img-fluid" alt="Building Plans">
+
+
+  <img src="https://creativepool.com/files/magazine/images/full/_920.jpg?rand=652510" class="banner img-fluid" alt="Building Plans">
+
 <div class="container bg-white">
 
    <!-- About -->
@@ -45,12 +55,13 @@
   </h5>
 </div>
 
+
 <div class="container-fluid main">
   <!-- Services -->
 
 
   <h5 id="services" class="text-center pt-3 pb-1">Sevices</h5>
-  <div  class="row equal-height">
+  <div  class="row equal-height boxy">
     <div class="col-md-6 col-lg-4">
       <div class="card border-0 mb-3">
         <svg  class="plan rounded w-50 h-50 mx-auto my-1" alt="Home Renovation" viewBox="0 0 512.00003 512"  xmlns="http://www.w3.org/2000/svg">
@@ -105,20 +116,20 @@
  <!-- Projects -->
   <div class="container-fluid bg-white">
     <h5 id="projects" class="text-center projects pt-3 pb-1">Projects</h5>
-  <div  class="row equal-height d-flex justify-content-between">
+  <div  class="row equal-height boxy">
   <div class="col-md-6 col-lg-4">
     <div id="accordion">
   <img src="https://images.unsplash.com/photo-1451153378752-16ef2b36ad05?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1047&q=80" class="card-img-top rounded border-0" alt="Home Renovation">
   <div class="card mb-3 bg-white border-0">
     <div class="card-header" id="headingOne">
       <h5 class="mb-0">
-        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
           Town House
         </button>
       </h5>
     </div>
 
-    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
       <div class="card-body">
         This is a customer of mine living the absolute highlife in a suburban Wigan household.
       </div>

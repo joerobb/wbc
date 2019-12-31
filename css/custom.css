@@ -58,6 +58,17 @@ a:hover {
   color: #ff8c00;
 }
 
+.menu {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+border-top: solid 2px #093998;
+}
+
+.menuLink {
+  color: #093998;
+}
+
 .card-title, .card-text {
   color: #fff;
 }
@@ -99,6 +110,28 @@ color: #093998;
   background-color: #e1eafc;
 }
 
+.boxy {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#lgMenu {
+  display:none;
+}
+
+.lgMenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.lgmenuLink {
+  color: #093998;
+}
+
+
 
 
 
@@ -125,12 +158,34 @@ color: #093998;
 }
 
 /* sm */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
+  .logo {
+    display: none;
+  }
+
+  #lgMenu {
+    display: block;
+  }
+
 
 }
 
 /* md */
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 800px) {
+
+  .banner {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+  }
+
+  .navbar-brand {
+    margin-left: 5%;
+  }
+
+  #lgMenu {
+    margin-right: 5%;
+  }
 
 }
 
