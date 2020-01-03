@@ -60,6 +60,13 @@ a:hover {
   color: #ff8c00;
 }
 
+li {
+  list-style: none;
+}
+
+.email {
+  font-size: 1.5rem;
+}
 .menu {
 display: flex;
 flex-direction: row;
